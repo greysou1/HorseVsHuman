@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <center><title>Horse or Human</title></center>
+        <script src="/static/myscripts.js"></script>
+        <link rel="stylesheet" href="/static/styles.css">
+    </head>
+    <body onload="myFunction()" style="margin:0;">
+        <center><h1 id="h1">Predicting...</h1></center>
+            <!--<form action="/upload" method="post" enctype="multipart/form-data" >
+                <center><span class="btn btn-default btn-file">
+                    Browse <input type="file" name="image">
+                </span>
+
+                <input type="submit" onclick="myFunction()" value="Upload your image" class="btn btn-primary"></center>
+            </form>
+            <br>
+            <br>
+            <br>-->
+
+            <div id="loader"></div>
+            <div style="display:none;" id="myDiv" class="animate-bottom">
+                <img align="middle" src = "http://ordinaryquotes.com/images/20638/sns_thank_you_guys_for_t.jpg">
+                {% if message %}
+                 <center><p><strong>MESSAGE: </strong> {{ message }}</center>
+                {% endif %}
+
+            <form action="/">
+                <center><input type="submit" value="Try again" class="btn btn-primary"></center>
+            </form>
+            </div>
+    </body>
+</html>
