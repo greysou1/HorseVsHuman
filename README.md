@@ -9,7 +9,13 @@ With 93% accuracy the classifier sometimes could be wrong but whom to blame if y
 
 ## How to run
 1. Run `pip install -r requirements.txt` (recommended to run in [virtualenv](https://realpython.com/python-virtual-environments-a-primer/))
+
 2. Run `python application.py`
+
 3. Run `export FLASK_APP=application.py`
+                (or)
+   Run `set FLASK_APP=application.py` 
+
 4. Run `flask run`
+
 5. Enter the address  in the browser.
