@@ -1,4 +1,3 @@
-from cs50 import SQL
 from flask import Flask, flash, redirect, render_template, request, session
 from flask_session import Session
 from tempfile import mkdtemp
@@ -16,15 +15,8 @@ JINJA_ENVIRONMENT = jinja2.Environment(
     extensions=['jinja2.ext.autoescape'],
     autoescape=True)
 
-
-
 # Configure application
 app = Flask(__name__)
-
-#https://tinyurl.com/y7aaenxn
-
-# Ensure responses aren't cached
-
 
 @app.after_request
 def after_request(response):
